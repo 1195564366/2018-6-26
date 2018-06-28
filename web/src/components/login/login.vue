@@ -76,7 +76,7 @@ export default {
           console.log(res)
           if (res.data.code === 200) {
             this.$toast(`${res.data.nick_name},${res.data.msg}`)
-            this.$router.push({name: 'Main'})
+            this.$router.push({name: 'Home'})
           } else {
             this.$toast(res.data.msg)
             this.getCaptcha()

@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Login from '@/components/login/login'
-import Main from '@/components/main/main'
 import Home from '@/components/home/home'
 import Record from '@/components/record/record'
 import Admin from '@/components/admin/admin'
@@ -16,11 +15,6 @@ export default new Router({
       path: '/',
       name: 'Login', //登录
       component: Login
-    },
-    {
-      path: '/main',
-      name: 'Main',
-      component: Main
     },
     {
       path: '/home',
