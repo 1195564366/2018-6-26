@@ -1,17 +1,18 @@
 <template>
   <div>
     管理
-    <van-tabbar>
-      <van-tabbar-item icon="home" to="home">首页</van-tabbar-item>
-      <van-tabbar-item icon="records" to="record">记一笔</van-tabbar-item>
-      <van-tabbar-item icon="chat">管理</van-tabbar-item>
-      <van-tabbar-item icon="contact" to="my">我的</van-tabbar-item>
-    </van-tabbar>
+    <Footer :active="2"/>
   </div>
 </template>
 
 <script>
-export default {}
+import Footer from '@/components/footer/footer'
+
+export default {
+  components: {
+    Footer
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
